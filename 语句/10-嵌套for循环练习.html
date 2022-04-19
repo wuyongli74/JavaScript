@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    span {
+      display: inline-block;
+      width: 80px;
+    }
+  </style>
+  <script type="text/javascript">
+    /**
+     * 1.打印99乘法表
+     * 
+     */
+
+    // 创建外层循环，用来控制乘法表的高度
+    for (i = 1; i < 10; i++) {
+      // console.log(i);
+      for (j = 1; j <= i; j++) {
+        document.write("<span>" + j + 'x' + i + "=" + j * i + "</span>");
+      }
+      document.write("<br/>");
+    }
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

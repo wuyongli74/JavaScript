@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="text/javascript">
+    /**
+     * 在页面中接收用户输入的数字，判断是否为质数
+     */
+
+    var num = prompt('请输一个质数：');
+
+    if (num <= 1 || isNaN(num)) {
+      console.log("请重新输入");
+    } else {
+
+      // 创建一个变量来保存当前的数的状态
+      // 默认当前num是质数
+      var flag = true;
+
+      // 判断num是否是质数
+      // 获取2-num之间的数
+      for (i = 2; i < num; i++) {
+        // console.log(i);
+        // 判读num是否能被i整除
+        // 从反方向证明
+        if (num % i == 0) {
+          // 如果num被i整除，则说明num一定不是质数
+          // console.log(i);
+          // 进入判断设置flag为false
+          flag = false;
+        }
+      }
+
+      // 如果num是质数则输出
+      if (flag) {
+        alert(num + '是质数');
+      } else {
+        alert('这个不是质数')
+      }
+
+    }
+
+
+
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
